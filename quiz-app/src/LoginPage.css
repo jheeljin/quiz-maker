@@ -1,0 +1,110 @@
+/* Login.css */
+
+/* Full-page Background and Centering */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('../public/images/quiz-background.jpg') no-repeat center center fixed;
+  background-size: cover; /* Makes the background image cover the entire screen */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#333;
+}
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Login Form Styling */
+.login-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Title Styling */
+.login-form h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.login-form h2:after {
+  content: '';
+  width: 40px;
+  height: 3px;
+  background: #4CAF50;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Input Styling */
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.4);
+  outline: none;
+}
+
+/* Button Styling */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Error Message */
+.error {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
